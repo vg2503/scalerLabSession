@@ -33,5 +33,14 @@ public class Client {
         recentlyViewedItems.AddItems(new Book("4", "book2", 234, 30,"John"));
         recentlyViewedItems.AddItems(new Book("5", "book3", 500, 33,"Tom"));
         recentlyViewedItems.getAllRecentItem();
+
+        //Here I am doing the Order Processing testing
+        OrderProcessing orderProcessNormal = new OrderProcessing();
+        orderProcessNormal.AddOrderForProcessing(new Order(4,"express",200));
+        orderProcessNormal.AddOrderForProcessing(new Order(2,"normal",300));
+        orderProcessNormal.AddOrderForProcessing(new Order(3,"express",100));
+        orderProcessNormal.AddOrderForProcessing(new Order(1,"normal",400));
+
+
     }
 }
